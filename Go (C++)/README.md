@@ -1,11 +1,17 @@
 ##  Directory structure
 
 Go (C++)/
+
 ├── main.cpp          # Main application and SFML GUI
+
 ├── board.h/cpp       # Board logic and Go rules
+
 ├── game.h/cpp        # Game state management
+
 ├── CMakeLists.txt    # Build configuration
+
 ├── .gitignore        # Git ignore file
+
 └── README.md         # This file
 
 ## Prerequisites
@@ -96,4 +102,5 @@ After building, run the executable:
 ### Game doesn't respond to clicks
 - Check that the executable is running properly
 - Ensure SFML libraries are in the same directory as the executable (Windows) or in system library path (Linux/macOS)
+
 
