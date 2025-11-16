@@ -1,11 +1,17 @@
 ## Directory structure
 
 Rubik (C++)/
+
 ├── main.cpp          # Main application and SFML GUI
+
 ├── rubik_cube.h/cpp  # Rubik's cube logic and rotation mechanics
+
 ├── renderer.h/cpp    # 3D OpenGL rendering system
+
 ├── CMakeLists.txt    # Build configuration
+
 ├── .gitignore        # Git ignore file
+
 └── README.md         # This file
 
 ### Prerequisites
