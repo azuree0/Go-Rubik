@@ -58,24 +58,3 @@ vcpkg install sfml
 cmake .. -DCMAKE_TOOLCHAIN_FILE=[vcpkg root]/scripts/buildsystems/vcpkg.cmake
 cmake --build . --config Release
 ```
-
-## Troubleshooting
-
-### CMake can't find SFML
-- Set the `SFML_ROOT` environment variable to your SFML installation directory
-- Or specify it during CMake configuration: `cmake .. -DSFML_ROOT=/path/to/sfml`
-
-### Build fails
-- Ensure you have C++17 support enabled: Check your compiler version
-- Check that SFML is properly installed and linked
-- Verify CMake version is 3.15 or later: `cmake --version`
-- On Windows, make sure Visual Studio Build Tools or MinGW is installed
-
-### Font not loading
-- The game tries to load Arial or Calibri from Windows fonts directory
-- On Linux/macOS, you may need to adjust the font path in `main.cpp`
-- The game will still work without fonts, but text may not display
-
-### Game doesn't respond to clicks
-- Check that the executable is running properly
-- Ensure SFML libraries are in the same directory as the executable (Windows) or in system library path (Linux/macOS)
